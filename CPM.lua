@@ -51,9 +51,9 @@ end
 
 function cheat()  
 cmenu = gg.choice({
-  "Чит кредома",
+  "Чит кредома (1600hp)",
   "Иммитация v16",
-  "Чит KotyaYT", 
+  "Чит KotyaYT (666hp)", 
   "Чит 1", 
   "Чит 2 (1100hp)", 
   "Глич 925сил",  
@@ -529,13 +529,13 @@ function racemode474()
       showrm=true
     end
     if showrm==true then
-      rmmenu=gg.choice({"Гравитация+Чит на скорость","Только гравитация","Выход"})
+      rmmenu=gg.choice({"Гравитация+Чит на скорость","Только гравитация","Выход"}, nil, "[TopixSB, Cody] Меню выбора режима гравитации")
       if rmmenu==1then
         cpm474gravityauto()
       elseif rmmenu==2 then
         cpm474gravityglitch()
       elseif rmmenu==3 then
-        pass()--back to func
+        --pass()--back to func
         main()
       else
         pass()
