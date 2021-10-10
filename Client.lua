@@ -9,11 +9,12 @@ gg.setVisible(false)
 gg.toast('Запускаю') 
 gg.sleep(1000)
 gg.setVisible(false) 
-menu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/scriptgameguardian/main/cpm.lua").content
+menu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/ScriptGameGuardian/main/CPM.lua").content
 pcall(load(menu)) 
 else
-gg.toast("Скрипт не поддерживает: " ..process.. "\nВыхожу... ")
-m() 
+choosemenu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/ScriptGameGuardian/main/Client.lua").content
+pcall(load(choosemenu))  
+
 end
 end
 
@@ -31,4 +32,6 @@ if gamechoose == 3 then os.exit() end
 end
 end
 
-m() 
+m()
+
+

@@ -1,6 +1,5 @@
 gg.setVisible(false) 
 gg.clearResults() 
-choosemenu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/scriptgameguardian/main/h/client.lua").content 
 function check() 
 decom = {
                   "com.zyt.sstool.premium",
@@ -12,15 +11,19 @@ decom = {
                 }
 for i = 3, 1, -1 do
 if gg.isPackageInstalled(decom[i]) then
-gg.setVisible(true) 
+gg.setVisible(false) 
+gg.toast(" Удалите декриптор: \n " ..decom[i].. "" )
+gg.sleep(500)
 print(" Найден декриптор: \n " ..decom[i].. " \n удалите его, \n иначе не запустится скрипт" )
---os.exit() 
-pcall(load(choosemenu))   
+gg.setVisible(true)  
+os.exit() 
 end
 end
+choosemenu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/ScriptGameGuardian/main/Client.lua").content
 pcall(load(choosemenu))  
-end
+end 
 
---check()
+check()
 
-print(22*2)
+
+

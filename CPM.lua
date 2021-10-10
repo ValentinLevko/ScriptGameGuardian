@@ -38,11 +38,13 @@ if menu == 1 then cheat() end
 if menu == 2 then donate() end
 if menu == 3 then money() end
 if menu == 4 then grav() end
-back = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/scriptgameguardian/main/h/client.lua").content
-if menu == 5 then pcall(load(back))  end
+if menu == 5 then backf() end
+end
+function backf() 
+choosemenu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/ScriptGameGuardian/main/Client.lua").content
+pcall(load(choosemenu))  
 
 end
-
 -- cheat menu
 
 
@@ -306,7 +308,7 @@ function donate()
 dmenu = gg.choice({
   "😱ℕ𝕀𝕊𝕊𝔸ℕ 350ℤ😱",
   "😱𝔻𝕆𝔻𝔾𝔼 𝕍𝕀ℙ𝔼ℝ😱",
-  "😱𝕄𝔼ℝℂ𝔼𝔻𝔼𝕊 𝔾𝕋𝟞𝟛😱",
+  "😱𝕄𝔼ℝℂ𝔼𝔻𝔼?? 𝔾𝕋𝟞𝟛😱",
   "😱𝔹𝕄𝕎 𝕄𝟠😱",
   "😱𝕄𝔼ℝℂ𝔼𝔻𝔼𝕊 𝔹𝔼ℕℤ😱",
   "😱𝔹𝕄𝕎 𝕚𝟠😱",
