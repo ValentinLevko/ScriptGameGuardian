@@ -38,7 +38,7 @@ if menu == 1 then cheat() end
 if menu == 2 then donate() end
 if menu == 3 then money() end
 if menu == 4 then grav() end
-back = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/CAR-PARKING/main/h/client.lua").content
+back = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/scriptgameguardian/main/h/client.lua").content
 if menu == 5 then pcall(load(back))  end
 
 end
@@ -474,43 +474,9 @@ moneymenu = gg.choice({
   "Получить 40 миллионов", 
   "Назад"
  }, nil, "Меню взлома денег [CPM 4.8.4.x]")
-if moneymenu == 1 then hack10kk() end
-if moneymenu == 2 then hack20kk() end
-if moneymenu == 3 then hack30kk() end
-if moneymenu == 4 then hack40kk() end
+ 
 if moneymenu == 5 then main() end
-end
 
-function hack10kk()
-  
-  secondslvl = 340000 
-  
-  hackmoney()
-  
-end
-function hack20kk()
-  
-  secondslvl = 680000 
-  
-  hackmoney()
-  
-end
-function hack30kk()
-  
-  secondslvl = 1020000 
-  
-  hackmoney()
-  
-end
-function hack40kk()
-  
-  secondslvl = 1360000 
-  
-  hackmoney()
-  
-end
-end 
-function hackmoney()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.setVisible(false)
 gg.alert("Зайди на 3уровень, но не проходи (у тебя 5 секунд) ")
@@ -530,12 +496,15 @@ gg.searchNumber("40", gg.TYPE_FLOAT)
 
 gg.getResults(100000000)
 
-gg.editAll(secondslvl, gg.TYPE_FLOAT)
+setsec = 340000 * moneymenu
+
+gg.editAll(setsec, gg.TYPE_FLOAT)
 gg.clearResults()
 gg.alert("Готово\n Пройди 1 уровень")
 gg.sleep(250)
 money() 
 end
+
 
 -- gravity menu
 
@@ -783,7 +752,7 @@ gg.alert("Скрипт написал: TopixSB /n/n Перевёл на русс
 racemode474()
 
 end
-
+main() 
 while(true)
 do
   while gg.isVisible(true)
