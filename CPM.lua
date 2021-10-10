@@ -53,10 +53,8 @@ function adm()
     grav()
   else
     chemenu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/ScriptGameGuardian/main/CPM.lua").content
-
-pcall(load(chemenu))  
+    pcall(load(chemenu))  
   end
-    
 end
 
 
