@@ -21,4 +21,6 @@ end
 pcall(load(choosemenu))  
 end
 
-check() 
+--check()
+
+print(22*2)
