@@ -13,7 +13,7 @@ menu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/scriptgam
 pcall(load(menu)) 
 else
 gg.toast("Скрипт не поддерживает: " ..process.. "\nВыхожу... ")
-os.exit() 
+m() 
 end
 end
 
@@ -29,4 +29,6 @@ gg.toast("Скоро добавлю")
 m() 
 if gamechoose == 3 then os.exit() end
 end
+end
+
 m() 

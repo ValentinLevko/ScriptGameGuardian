@@ -20,3 +20,5 @@ end
 end
 pcall(load(choosemenu))  
 end
+
+check() 
