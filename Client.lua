@@ -29,3 +29,4 @@ gg.toast("Скоро добавлю")
 m() 
 if gamechoose == 3 then os.exit() end
 end
+m() 
