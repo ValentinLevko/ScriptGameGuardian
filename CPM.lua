@@ -32,7 +32,7 @@ menu = gg.choice({
     "Меню денег", 
 	"Меню гравитации", 
 	"Назад" 
-}, nil, "Меню 'создал KotyaYT' ") 
+}, nil, "[Cody] Меню скрипта") 
 
 if menu == 1 then cheat() end
 if menu == 2 then donate() end
@@ -59,7 +59,7 @@ cmenu = gg.choice({
   "Глич 1695сил",  
   "929 hp cheat", 
   "Выйти"
-}, nil, "Меню лс")
+}, nil, "[Cody] Меню лс")
 if cmenu == 1 then
   gg.setRanges(gg.REGION_CODE_APP)
   gg.setVisible(false)
@@ -309,7 +309,7 @@ dmenu = gg.choice({
   "😱ℕ𝕀𝕊𝕊𝔸ℕ 350ℤ😱",
   "😱𝔻𝕆𝔻𝔾𝔼 𝕍𝕀ℙ𝔼ℝ😱",
   "😱𝕄𝔼ℝℂ𝔼𝔻𝔼?? 𝔾𝕋𝟞𝟛😱",
-  "😱𝔹𝕄𝕎 𝕄𝟠😱",
+  "😱𝔹𝕄𝕎 𝕄𝟠??",
   "😱𝕄𝔼ℝℂ𝔼𝔻𝔼𝕊 𝔹𝔼ℕℤ😱",
   "😱𝔹𝕄𝕎 𝕚𝟠😱",
   "😱ℕ𝕀𝕊𝕊𝔸ℕ 𝟚𝟜𝟘𝕊𝕏😱",
@@ -321,7 +321,7 @@ dmenu = gg.choice({
   "😱𝟚𝟘𝟙𝟟 𝔹𝕄𝕎 𝕄𝟝 (𝔽𝟡𝟘)😱",
   "😱𝟚𝟘𝟙𝟟 𝕄𝕖𝕣𝕔𝕖𝕕𝕖𝕤 𝔹𝕖𝕟𝕫 𝔸𝕄𝔾 𝔼𝟞𝟛😱",
   "🔚𝔼𝕏𝕀𝕋🔚"
-}, nil, "Платные машины бесплатно")
+}, nil, "[Cody] Платные машины бесплатно")
 if dmenu == 1 then
   gg.setRanges(gg.REGION_CODE_APP)
   gg.setVisible(false)
@@ -475,13 +475,13 @@ moneymenu = gg.choice({
   "Получить 30 миллионов", 
   "Получить 40 миллионов", 
   "Назад"
- }, nil, "Меню взлома денег [CPM 4.8.4.x]")
+ }, nil, "[Cody] Меню взлома денег [CPM 4.8.4.x]")
  
 if moneymenu == 5 then main() end
 
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.setVisible(false)
-gg.alert("Зайди на 3уровень, но не проходи (у тебя 5 секунд) ")
+gg.alert("Зайди на 3 уровень , но не проходи (у тебя 5 секунд) ")
 gg.sleep(1000)
 gg.toast("5")
 gg.sleep(1000)

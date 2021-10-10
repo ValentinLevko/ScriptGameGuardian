@@ -20,10 +20,10 @@ end
 
 function m() 
 gamechoose = gg.choice({
-	"Car Parking Multiplayer [4.8.4.x]", 
-	"Car Parking Multiplayer [4.8.3]",
+	"Car Parking Multiplayer [4.8.4.x] by Cody", 
+	"Car Parking Multiplayer [4.8.3] by Cody",
 	"exit" 
-	}, nil, "Выберите игру") 
+	}, nil, "[CodyMenu] Выберите игру") 
 if gamechoose == 1 then cpm() end
 if gamechoose == 2 then 
 gg.toast("Скоро добавлю") 
