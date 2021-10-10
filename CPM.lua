@@ -124,6 +124,7 @@ if cmenu == 2 then
 gg.toast("✅Готово✅")
 end
 if cmenu == 3 then
+  admin = 1
   gg.setRanges(gg.REGION_CODE_APP)
   gg.setVisible(false)
   gg.searchNumber("190", gg.TYPE_FLOAT)
