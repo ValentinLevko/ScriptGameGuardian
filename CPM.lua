@@ -25,6 +25,7 @@ copyMenu = gg.choice({
 }, nil, "Копировать ли вк? ")
 
 end
+
 function main() 
 menu = gg.choice({
 	"Лс меню ", 
@@ -37,7 +38,7 @@ menu = gg.choice({
 if menu == 1 then cheat() end
 if menu == 2 then donate() end
 if menu == 3 then money() end
-if menu == 4 then backf() end
+if menu == 4 then adm() end
 --if menu == 4 then grav() end
 if menu == 5 then backf() end
 end
@@ -46,6 +47,19 @@ choosemenu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/Scr
 pcall(load(choosemenu))  
 
 end
+
+function adm()
+  if admin == 1 then
+    grav()
+  else
+    chemenu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/ScriptGameGuardian/main/CPM.lua").content
+
+pcall(load(chemenu))  
+  end
+    
+end
+
+
 -- cheat menu
 
 
