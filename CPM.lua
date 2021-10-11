@@ -62,6 +62,7 @@ end
 
 
 function cheat()  
+  admin = 1
 cmenu = gg.choice({
   "Чит кредома (1600hp)",
   "Иммитация v16",
