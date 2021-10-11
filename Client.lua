@@ -47,11 +47,19 @@ gamechoose = gg.choice({
 	"exit" 
 	}, nil, "[CodyHubMenu] Выберите игру") 
 if gamechoose == 1 then cpm() end
-if gamechoose == 2 then 
-cpmold()
-if gamechoose == 3 then os.exit() end
+if gamechoose == 2 then cpmold() end
+if gamechoose == 3 then debugmode() end
+if gamechoose == 4 then os.exit() end
 end
 end
+
+function debugmode()
+  
+  local v = gg.getTargetInfo()
+  gg.alert("Ваша версия игры: " ..v.versionName.. "\n Битность игры: " ..bit.. "") 
+  
+end
+
 
 m()
 
