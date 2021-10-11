@@ -46,7 +46,7 @@ gamechoose = gg.choice({
 	"Car Parking Multiplayer [4.8.4.x] by Cody", 
 	"Car Parking Multiplayer [4.8.3] by Cody",
 	"exit" 
-	}, nil, "[CodyMenu] Выберите игру") 
+	}, nil, "[CodyHubMenu] Выберите игру") 
 if gamechoose == 1 then cpm() end
 if gamechoose == 2 then 
 cpmold()
