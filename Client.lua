@@ -42,27 +42,12 @@ function m()
 gamechoose = gg.choice({
 	"Car Parking Multiplayer [4.8.4.x] by Cody", 
 	"Car Parking Multiplayer [4.8.3] by Cody",
-	"Проверка битности процесса",
 	"Выйти" 
 	}, nil, "[CodyHubMenu] Выберите игру") 
 if gamechoose == 1 then cpm() end
 if gamechoose == 2 then cpmold() end
-if gamechoose == 3 then debugmode() end
-if gamechoose == 4 then os.exit() end
+if gamechoose == 3 then os.exit() end
 end
-
-function debugmode()
-  
-  local v = gg.getTargetInfo()
-  if v.x64 == true then
-    local bit = 64
-  else
-    local bit = 32
-  end
-  
-  print("\n Битность Процесса: " ..bit.. "") 
-end
-
 
 m()
 
