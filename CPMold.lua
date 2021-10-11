@@ -10,6 +10,15 @@ gg.toast(" 25% ")
 gg.sleep(100)
 gg.toast(" 60% ")
 
+local v = gg.getTargetInfo()
+
+if v.versionName ~= "4.8.3" then
+
+gg.alert("Ваша версия " ..v.versionName.. "\n Для работы скрипта необходима версия игры 4.8.3" ) 
+choosemenu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/ScriptGameGuardian/main/Client.lua").content
+pcall(load(choosemenu))  
+end
+
 gg.sleep(300)
 gg.toast(" 70% ")
 gg.sleep(100)
@@ -32,7 +41,7 @@ menu = gg.choice({
 	"Донат машины", 
     "10кк в первом уровне", 
 	"Меню гравитации", 
-	"Меню хромов" 
+	"Меню хромов", 
 	"Назад" 
 }, nil, "[Cody] Меню скрипта") 
 
