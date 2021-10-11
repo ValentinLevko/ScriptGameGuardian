@@ -22,7 +22,6 @@ end
 function cpmold() 
 
 game = "com.olzhas.carparking.multyplayer" 
-
 process = gg.getTargetPackage() 
 if process == game then
 gg.setVisible(false) 
