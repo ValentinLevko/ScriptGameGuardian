@@ -60,8 +60,7 @@ function debugmode()
     local bit = 32
   end
   
-  gg.alert("\n Битность Процесса: " ..bit.. "") 
-  
+  print("\n Битность Процесса: " ..bit.. "") 
 end
 
 
