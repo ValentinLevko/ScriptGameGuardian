@@ -3,6 +3,15 @@ if gg.isVisible(true)
     gg.setVisible(false)
   end
   
+  
+local v = gg.getTargetInfo()
+
+if v.versionName ~= 4.8.3 then
+gg.alert("Ваша версия " ..v.versionName.. "\n Для работы скрипта необходима версия игры 4.8.3" ) 
+choosemenu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/ScriptGameGuardian/main/Client.lua").content
+pcall(load(choosemenu))  
+end
+
 gg.sleep(300)
 gg.toast(" 10% ")
 gg.sleep(300)
