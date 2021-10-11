@@ -52,6 +52,7 @@ function adm()
   if admin == 1 then
     grav()
   else
+    gg.toast("Функция не доступна сейчас")
     chemenu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/ScriptGameGuardian/main/CPM.lua").content
     pcall(load(chemenu))  
   end
