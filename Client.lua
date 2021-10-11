@@ -49,9 +49,7 @@ gamechoose = gg.choice({
 	}, nil, "[CodyMenu] Выберите игру") 
 if gamechoose == 1 then cpm() end
 if gamechoose == 2 then 
---cpmold()
-gg.toast("Скоро добавлю") 
-m() 
+cpmold()
 if gamechoose == 3 then os.exit() end
 end
 end
