@@ -55,7 +55,13 @@ end
 function debugmode()
   
   local v = gg.getTargetInfo()
-  gg.alert("Ваша версия игры: " ..v.versionName.. "\n Битность игры: " v.x64 "") 
+  if v.x64 == true then
+    local bit = 64
+  else
+    local bit = 32
+  end
+  
+  gg.alert("\n Битность Процесса: " ..bit.. "") 
   
 end
 
