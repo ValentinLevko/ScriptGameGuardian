@@ -7,14 +7,15 @@ i = "vk.com/volentin2002"
 gg.alert("Версия скрипта: 1.1 \n Что нового добавлено : \n Меню НЛО\n Включил меню гравитации\n Vk создателя: " ..i.."") --" Скопирован " )
 gg.sleep(150)
 --gg.copyText(i) 
-
+local speed = off
 function main() 
 menu = gg.choice({
 	"Лс меню ", 
 	"Донат машины", 
   "Меню денег", 
 	"Меню гравитации(баг)",
-	"НЛО(баг)", 
+	"НЛО", 
+	"Супер скорость" ..speed.. "", 
 	"Назад" 
 }, nil, "[Cody] Меню скрипта") 
 
@@ -22,13 +23,17 @@ if menu == 1 then cheat() end
 if menu == 2 then donate() end
 if menu == 3 then money() end
 if menu == 4 then grav() end
-if menu == 5 then ufo() end
-if menu == 6 then backf() end
+if menu == 5 then superspeed() end
+if menu == 6 then ufo() end
+if menu == 7 then backf() end
 end
 function backf() 
 choosemenu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/ScriptGameGuardian/main/Client.lua").content
 pcall(load(choosemenu))  
 
+end
+function superspeed()
+  
 end
 
 function ufo()
