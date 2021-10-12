@@ -88,22 +88,16 @@ end
 
 
 function adm()
-  admin = 1
-  if admin == 1 then
+    -- gg.toast("Функция не доступна сейчас")
+   -- main()
     grav()
-  else
-    gg.toast("Функция не доступна сейчас")
-    chemenu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/ScriptGameGuardian/main/CPM.lua").content
-    pcall(load(chemenu))  
-  end
 end
 
 
 -- cheat menu
 
 
-function cheat()  
-  admin = 1
+function cheat()
 cmenu = gg.choice({
   "Чит кредома (1600hp)",
   "Иммитация v16",
