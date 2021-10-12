@@ -33,7 +33,7 @@ pcall(load(choosemenu))
 
 end
 function superspeed()
-  if sspeed == off
+  if sspeed == off then 
 gg.setVisible(false)
 gg.setRanges(gg.REGION_CODE_APP)
 gg.setVisible(false)
