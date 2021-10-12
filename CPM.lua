@@ -14,7 +14,7 @@ gg.toast(" 70% ")
 gg.sleep(100)
 gg.toast(" 100% ")
 i = "vk.com/volentin2002" 
-gg.alert("Версия скрипта: 0.6 бета \n Что нового добавлено : \n Меню НЛО\n Включил меню гравитации\n Vk создателя: " ..i.."") --" Скопирован " )
+gg.alert("Версия скрипта: 1.1 \n Что нового добавлено : \n Меню НЛО\n Включил меню гравитации\n Vk создателя: " ..i.."") --" Скопирован " )
 gg.sleep(150)
 
 --gg.copyText(i) 
@@ -31,17 +31,16 @@ menu = gg.choice({
 	"Лс меню ", 
 	"Донат машины", 
   "Меню денег", 
-	"Меню гравитации(баги) ",
-	"НЛО", 
+	"Меню гравитации(баг)",
+	"НЛО(баг)", 
 	"Назад" 
 }, nil, "[Cody] Меню скрипта") 
 
 if menu == 1 then cheat() end
 if menu == 2 then donate() end
 if menu == 3 then money() end
-if menu == 5 then ufo() end
---if menu == 5 then adm() end
 if menu == 4 then grav() end
+if menu == 5 then ufo() end
 if menu == 6 then backf() end
 end
 function backf() 
@@ -89,7 +88,7 @@ function ufo()
   gg.toast("1")
   gg.sleep(1000)
   gg.searchNumber("-10", gg.TYPE_FLOAT)
-  ufoedit = gg.prompt({"Развал [-90;0]","Выйти "},{[1]= -10},{"number"})
+  ufoedit = gg.prompt({"Развал [-90;0]","Выйти "},{[1] = 0},{"number"})
   gg.editAll(ufoedit[1], gg.TYPE_FLOAT)
   gg.alert("Зайдите в подвеску и нажмите готово")
   main()
