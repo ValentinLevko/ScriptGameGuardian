@@ -32,15 +32,17 @@ menu = gg.choice({
 	"Донат машины", 
   "Меню денег", 
 	"Меню гравитации(баги, пока отключен) ",
+	"НЛО", 
 	"Назад" 
 }, nil, "[Cody] Меню скрипта") 
 
 if menu == 1 then cheat() end
 if menu == 2 then donate() end
 if menu == 3 then money() end
-if menu == 4 then adm() end
+if menu == 4 then ufo() end
+if menu == 5 then adm() end
 --if menu == 4 then grav() end
-if menu == 5 then backf() end
+if menu == 6 then backf() end
 end
 function backf() 
 choosemenu = gg.makeRequest("https://raw.githubusercontent.com/ValentinLevko/ScriptGameGuardian/main/Client.lua").content
@@ -48,7 +50,45 @@ pcall(load(choosemenu))
 
 end
 
+function ufo()
+  gg.setVisible(false)
+  gg.alert("Зайдите в подвеску и выкрутите на максимум развал\nУ вас 3 сек")
+gg.setVisible(false)
+  gg.toast("3")
+  gg.sleep(1000)
+  gg.toast("2")
+  gg.sleep(1000)
+  gg.toast("1")
+  gg.sleep(1000)
+  gg.setRanges(gg.REGION_ANONYMOUS)
+  
+  gg.searchNumber("-10", gg.TYPE_FLOAT)
+  gg.alert("Зайдите в подвеску и выкрутите на минимум развал\nУ вас 3 сек")
+  gg.toast("3")
+
+  gg.sleep(1000)
+
+  gg.toast("2")
+  gg.sleep(1000)
+  gg.toast("1")
+  gg.sleep(1000)
+  gg.searchNumber("0", gg.TYPE_FLOAT)
+gg.alert("Зайдите в подвеску и выкрутите на максимум развал\nУ вас 3 сек")
+gg.toast("3")
+  gg.sleep(1000)
+  gg.toast("2")
+  gg.sleep(1000)
+  gg.toast("1")
+  gg.sleep(1000)
+gg.searchNumber("-10", gg.TYPE_FLOAT)
+ufoedit = gg.prompt({"Развал [-90;0]","Выйти "},{[1]= -10},{"number","checkbox"})
+  gg.editAll("ufoedit", gg.TYPE_FLOAT)
+  main()
+end
+
+
 function adm()
+  admin = 1
   if admin == 1 then
     grav()
   else
