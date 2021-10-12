@@ -3,28 +3,10 @@ if gg.isVisible(true)
     gg.setVisible(false)
   end
   
-gg.sleep(300)
-gg.toast(" 10% ")
-gg.sleep(300)
-gg.toast(" 25% ")
-gg.sleep(100)
-gg.toast(" 60% ")
-gg.sleep(300)
-gg.toast(" 70% ")
-gg.sleep(100)
-gg.toast(" 100% ")
 i = "vk.com/volentin2002" 
 gg.alert("Версия скрипта: 1.1 \n Что нового добавлено : \n Меню НЛО\n Включил меню гравитации\n Vk создателя: " ..i.."") --" Скопирован " )
 gg.sleep(150)
-
 --gg.copyText(i) 
-function vkcopy()
-copyMenu = gg.choice({
-  "Скопировать", 
-  "Не копировать"
-}, nil, "Копировать ли вк? ")
-
-end
 
 function main() 
 menu = gg.choice({
@@ -88,19 +70,11 @@ function ufo()
   gg.toast("1")
   gg.sleep(1000)
   gg.searchNumber("-10", gg.TYPE_FLOAT)
-  ufoedit = gg.prompt({"Развал [-90;0]","Выйти "},{[1] = 0},{"number"})
+  ufoedit = gg.prompt({"Развал [-90;0]"},{[1] = 0},{"number"})
   gg.editAll(ufoedit[1], gg.TYPE_FLOAT)
   gg.alert("Зайдите в подвеску и нажмите готово")
   main()
 end
-
-
-function adm()
-    -- gg.toast("Функция не доступна сейчас")
-   -- main()
-    grav()
-end
-
 
 -- cheat menu
 
