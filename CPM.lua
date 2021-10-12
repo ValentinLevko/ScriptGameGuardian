@@ -33,7 +33,13 @@ pcall(load(choosemenu))
 
 end
 function superspeed()
-  
+gg.setVisible(false)
+gg.setRanges(gg.REGION_CODE_APP)
+gg.setVisible(false)
+gg.searchNumber("1.10000002384", gg.TYPE_FLOAT)
+gg.getResults(1)
+gg.editAll("39", gg.TYPE_FLOAT)
+gg.clearResults()
 end
 
 function ufo()
