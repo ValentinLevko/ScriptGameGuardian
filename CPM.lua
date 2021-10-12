@@ -7,7 +7,7 @@ i = "vk.com/volentin2002"
 gg.alert("Версия скрипта: 1.2 \n Что нового добавлено : \n Суперскорость(Примерно: 400м за 1-2 сек) \n Новый чит в лс меню\n Vk создателя: " ..i.."") --" Скопирован " )
 gg.sleep(150)
 --gg.copyText(i) 
-local speed = off
+sspeed = off
 function main() 
 menu = gg.choice({
 	"Лс меню ", 
@@ -33,7 +33,7 @@ pcall(load(choosemenu))
 
 end
 function superspeed()
-  if speed == off
+  if sspeed == off
 gg.setVisible(false)
 gg.setRanges(gg.REGION_CODE_APP)
 gg.setVisible(false)
@@ -41,7 +41,7 @@ gg.searchNumber("1.10000002384", gg.TYPE_FLOAT)
 gg.getResults(1)
 gg.editAll("39", gg.TYPE_FLOAT)
 gg.clearResults()
-speed = on
+sspeed = on
 gg.toast("Суперскорость: Включена ")
 else 
   gg.setVisible(false)
@@ -53,7 +53,7 @@ gg.searchNumber("39", gg.TYPE_FLOAT)
 gg.getResults(1)
 gg.editAll("1.10000002384", gg.TYPE_FLOAT)
 gg.clearResults()
-speed = off
+sspeed = off
 gg.toast("Суперскорость: Выключена ")
 end
 
