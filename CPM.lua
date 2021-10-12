@@ -14,7 +14,7 @@ gg.toast(" 70% ")
 gg.sleep(100)
 gg.toast(" 100% ")
 i = "vk.com/volentin2002" 
-gg.alert("Версия скрипта: 0.5 бета \n Что нового добавлено : \n Меню денег для новой версии игры \n \n Vk создателя: " ..i.."") --" Скопирован " )
+gg.alert("Версия скрипта: 0.6 бета \n Что нового добавлено : \n Меню НЛО\n Включил меню гравитации\n Vk создателя: " ..i.."") --" Скопирован " )
 gg.sleep(150)
 
 --gg.copyText(i) 
@@ -31,7 +31,7 @@ menu = gg.choice({
 	"Лс меню ", 
 	"Донат машины", 
   "Меню денег", 
-	"Меню гравитации(баги, пока отключен) ",
+	"Меню гравитации(баги) ",
 	"НЛО", 
 	"Назад" 
 }, nil, "[Cody] Меню скрипта") 
@@ -39,9 +39,9 @@ menu = gg.choice({
 if menu == 1 then cheat() end
 if menu == 2 then donate() end
 if menu == 3 then money() end
-if menu == 4 then ufo() end
-if menu == 5 then adm() end
---if menu == 4 then grav() end
+if menu == 5 then ufo() end
+--if menu == 5 then adm() end
+if menu == 4 then grav() end
 if menu == 6 then backf() end
 end
 function backf() 
