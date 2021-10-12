@@ -23,8 +23,8 @@ if menu == 1 then cheat() end
 if menu == 2 then donate() end
 if menu == 3 then money() end
 if menu == 4 then grav() end
-if menu == 5 then superspeed() end
-if menu == 6 then ufo() end
+if menu == 6 then superspeed() end
+if menu == 5 then ufo() end
 if menu == 7 then backf() end
 end
 function backf() 
