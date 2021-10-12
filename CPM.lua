@@ -82,7 +82,8 @@ gg.toast("3")
   gg.sleep(1000)
 gg.searchNumber("-10", gg.TYPE_FLOAT)
 ufoedit = gg.prompt({"Развал [-90;0]","Выйти "},{[1]= -10},{"number","checkbox"})
-  gg.editAll("ufoedit", gg.TYPE_FLOAT)
+  gg.editAll(ufoedit[1], gg.TYPE_FLOAT)
+  
   main()
 end
 
