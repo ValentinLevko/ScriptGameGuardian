@@ -33,7 +33,7 @@ pcall(load(choosemenu))
 
 end
 function superspeed()
-  if speed == false
+  if speed == off
 gg.setVisible(false)
 gg.setRanges(gg.REGION_CODE_APP)
 gg.setVisible(false)
@@ -41,7 +41,8 @@ gg.searchNumber("1.10000002384", gg.TYPE_FLOAT)
 gg.getResults(1)
 gg.editAll("39", gg.TYPE_FLOAT)
 gg.clearResults()
-speed = true 
+speed = on
+gg.toast("Суперскорость: Включена ")
 else 
   gg.setVisible(false)
 
@@ -52,6 +53,8 @@ gg.searchNumber("39", gg.TYPE_FLOAT)
 gg.getResults(1)
 gg.editAll("1.10000002384", gg.TYPE_FLOAT)
 gg.clearResults()
+speed = off
+gg.toast("Суперскорость: Выключена ")
 end
 
 end
