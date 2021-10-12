@@ -395,8 +395,12 @@ if cmenu == 9 then
   gg.getResults(999)
   gg.editAll("1E-17", gg.TYPE_FLOAT)
   gg.clearResults(999)
-   
+  gg.searchNumber("1000", gg.TYPE_FLOAT)
+  gg.sleep(300)
+  gg.getResults(999)
+  gg.editAll("130", gg.TYPE_FLOAT)
   gg.alert("Купите  𝗘𝗡𝗚𝗜𝗡𝗘 𝗟𝟜 𝟚.𝟝, 𝗙𝗔𝗦𝗧𝗚𝗘𝗔𝗥𝗕𝗢𝗫") 
+  gg.clearResults()
 gg.toast("✅Готово✅")
 end
 
