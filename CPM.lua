@@ -15,7 +15,7 @@ menu = gg.choice({
   "Меню денег", 
 	"Меню гравитации(баг)",
 	"НЛО", 
-	"Супер скорость" ..speed.. "", 
+	"Супер скорость", 
 	"Назад" 
 }, nil, "[Cody] Меню скрипта") 
 
@@ -33,6 +33,7 @@ pcall(load(choosemenu))
 
 end
 function superspeed()
+  if speed == false
 gg.setVisible(false)
 gg.setRanges(gg.REGION_CODE_APP)
 gg.setVisible(false)
@@ -40,6 +41,19 @@ gg.searchNumber("1.10000002384", gg.TYPE_FLOAT)
 gg.getResults(1)
 gg.editAll("39", gg.TYPE_FLOAT)
 gg.clearResults()
+speed = true 
+else 
+  gg.setVisible(false)
+
+gg.setRanges(gg.REGION_CODE_APP)
+
+gg.setVisible(false)
+gg.searchNumber("39", gg.TYPE_FLOAT)
+gg.getResults(1)
+gg.editAll("1.10000002384", gg.TYPE_FLOAT)
+gg.clearResults()
+end
+
 end
 
 function ufo()
